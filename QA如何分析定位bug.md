@@ -44,7 +44,7 @@
 
 ##### QA定位bug的大体流程
 
-![image](https://github.com/lunling49/images/blob/master/%E5%AE%9A%E4%BD%8D%E8%B0%83%E8%AF%95.png)
+![image](https://github.com/lunling49/images/blob/master/bug%E5%88%86%E6%9E%90.png)
 
 
 
