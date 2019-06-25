@@ -114,7 +114,7 @@ NB青年----代码走查，JPDA远程调试
 
 ##### 一般系统的定位调试
 
-![image]()
+![image](https://github.com/lunling49/images/blob/master/%E5%AE%9A%E4%BD%8D%E8%B0%83%E8%AF%95.png)
 
 
 
