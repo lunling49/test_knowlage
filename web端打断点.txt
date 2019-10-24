@@ -1,0 +1,17 @@
+设置断点
+1、js断点
+a、sources断点：流程：F12（Ctrl+Shift+I）—点击Sources菜单—左侧树中找到相应文件—点击行列号，即完成在当前行添加/删除断点操作。当断点添加完毕后，刷新页面JS执行到断点位置停住，在Sources界面会看到当前作用域中所有变量和值，只需对每个值进行验证即可完成我们题设验证要求。
+--条件断点：在Sources里还可以设置条件断点，在断点位置的右键菜单中选择“Edit Breakpoint...”可以设置触发断点的条件，就是写一个表达式，表达式为true时才触发断点。
+b、debugger断点：在代码中添加“debugger;”语句，当代码执行到改语句的时候就会自动断点
+
+2、DOM断点：顾名思义就是在DOM元素上添加断点，进而达到调试的目的。而在实际使用中断点的效果最终还是落地到JS逻辑之内。
+流程为：打开Elements面板—定位到相关DOM节点—单击鼠标右键，弹出侧边栏—鼠标移动到Break on…上，选择相应选项subtree modifications/attributes modifications/node remove即可
+-子节点变化断点（subtree modifications）
+主要针对子节点增加、删除以及交换顺序等操作，但子节点进行属性修改和内容修改并不会触发断点。
+-节点属性断点（attributes modifications）
+-节点移除断点（node removal）
+
+3、XHR断点：通过“XHR Breakpoints”右侧的“+”号为异步断点添加断点条件，当异步请求触发时的URL满足此条件，JS逻辑则会自动产生断点
+
+4、事件监听器断点（Event Listener Breakpoints）：即根据事件名称进行断点设置。当事件被触发时，断点到事件绑定的位置。事件监听器断点，列出了所有页面及脚本事件，包括：鼠标、键盘、动画、定时器、XHR等等
+
